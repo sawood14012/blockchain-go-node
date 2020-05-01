@@ -72,5 +72,6 @@ func main() {
 	http.HandleFunc("/print", callprintChain)
 	http.HandleFunc("/usage", callprintUsage)
 	fmt.Printf("Server listening on localhost:%s\n", port)
+	fmt.Printf("Server running")
 	http.ListenAndServe(fmt.Sprintf(":%s", port), nil)
 }
