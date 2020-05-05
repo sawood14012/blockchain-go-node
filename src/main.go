@@ -68,6 +68,7 @@ func callprintChain(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	port := "8080"
+	fmt.Printf("I'm running out of wrods")
 	http.HandleFunc("/createBlockChain", callcreateBlockChain)
 	http.HandleFunc("/print", callprintChain)
 	http.HandleFunc("/usage", callprintUsage)
