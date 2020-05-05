@@ -1,4 +1,5 @@
 FROM golang:alpine AS builder
+
 RUN apk update \
         && apk upgrade \
         && apk add --no-cache \
