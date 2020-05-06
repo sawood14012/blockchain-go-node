@@ -71,6 +71,7 @@ func main() {
 	http.HandleFunc("/createBlockChain", callcreateBlockChain)
 	http.HandleFunc("/print", callprintChain)
 	http.HandleFunc("/usage", callprintUsage)
+	fmt.Printf("Hello gaurav")
 	fmt.Printf("Server listening on localhost:%s\n", port)
 	http.ListenAndServe(fmt.Sprintf(":%s", port), nil)
 }
