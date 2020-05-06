@@ -71,9 +71,13 @@ func callprintChain(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	port := "8080"
+	fmt.Printf("I'm running out of wrods")
+	fmt.Printf("I'm running out of words")
+	fmt.Printf("New pull request")
 	http.HandleFunc("/createBlockChain", callcreateBlockChain)
 	http.HandleFunc("/print", callprintChain)
 	http.HandleFunc("/usage", callprintUsage)
+	fmt.Printf("End points created")
 	fmt.Printf("Server listening on localhost:%s\n", port)
 	fmt.Printf("Server running")
 	http.ListenAndServe(fmt.Sprintf(":%s", port), nil)
